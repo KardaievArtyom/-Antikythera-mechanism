@@ -26,9 +26,9 @@
                 text-transform: uppercase; font-family: Arial, Helvetica, sans-serif; font-weight: 400; line-height: 1.5em; font-size: large; white-space: nowrap;
                 user-select: none; pointer-events: none;
             ">
-          Натисніть на екран
+            Натисніть на екран
             <br>
-           Для отримання доступу до WebAr-буклету "Antikythera-mechanism".
+            для отримання доступу до WebAr-буклету "Антикіхерський механізм"
         </div>
     </div>
 
@@ -152,31 +152,31 @@
 
                 // Массив имён файлов .patt. Массив заполняется в порядке добавления маркеров
                 // если вместо .patt был добавлен баркод, на его место в массив добавляется пустая строка
-                const patternNames = ["" ,"" ,"pattern-149452.patt"];
+                const patternNames = ["pattern-149452.patt"];
                 // Maссив баркодов, заполняется одновременно с массивом паттернов
                 // если вместо баркода был добавлен .patt, на его место в массив добавляется -1
-                const patternBarcode = [1 ,2 ,-1];
+                const patternBarcode = [-1];
                 // Массив типов контента для каждого маркера, заполняется значиями: изображение, модель, видео
-                const modes = ["image" ,"image" ,"image"];
+                const modes = ["image"];
                 // Массив файлов моделей, если нет модели будет добавлена пустая строка
-                const modelFiles = ["" ,"" ,""];
+                const modelFiles = [""];
                 // Массив файлов изображений, если нет изображения будет добавлена пустая строка
-                const imageFiles = ["800px-Antikythera_model_front_panel_Mogi_Vicentini_2007.jfif" ,"NAMA_Machine_d'Anticythère_1.jpg" ,"3d-reconstruction-ancient-antikythera-mechanism.jpg"];
+                const imageFiles = ["pattern-149452.png"];
                 // Массив файлов видео, если нет видео будет добавлена пустая строка
-                const videoFiles = ["" ,"" ,""];
+                const videoFiles = [""];
                 // Массив файлов аудио, если нет аудио будет добавлена пустая строка
-                const audioFiles = ["Vocaroo 18 Mar 2022 22_38_48 GMT+0200 1oRxqqQBE1e7.mp3" ,"Vocaroo 18 Mar 2022 22_39_19 GMT+0200 1i0xUr0Oz4mj.mp3" ,"Vocaroo 18 Mar 2022 22_41_06 GMT+0200 1kaOB3BQwPUw.mp3"];
+                const audioFiles = ["Vocaroo 18 Mar 2022 22_41_06 GMT+0200 1kaOB3BQwPUw.mp3"];
                 // Массив опций повтора аудио и видео контента, по дефолту для всех будет false
-                const repeatOptions = ["false" ,"false" ,"false"];
+                const repeatOptions = ["false"];
   
                 // Создаём массив для всех маркеров
                 const markerRoots = [];
-                for (let i = 0; i < 3; i++) {
+                for (let i = 0; i < 1; i++) {
                     markerRoots[i] = new THREE.Group();
                 }
   
                 // Проходимся по каждому маркеру из массива и добавляем его в главный контейнер 
-                for (let i = 0; i < 3; i++) {
+                for (let i = 0; i < 1; i++) {
                     mainContainer.add(markerRoots[i]);
 
                     // Если текущий маркер это баркод, создаём AR контроллер под баркод
